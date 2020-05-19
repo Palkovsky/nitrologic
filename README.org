@@ -3,10 +3,10 @@
 
 * Example
   #+begin_src rust
-      fn example(
-          loudness: f64,
-          time_of_day: f64
-      ) ->  FuzzyResult<f64> {
+  fn example(
+      loudness: f64,
+      time_of_day: f64
+  ) ->  FuzzyResult<f64> {
       // Construct fuzzy controller
       let fuzzer = Fuzzer::new(
       ).fuzzify(
@@ -69,7 +69,7 @@
       // Oddam wam wszystko, spójrzcie.
       // Jest OKEJ
       Ok(cog)
-    }
+  }
   #+end_src
 
 * Example outputs
