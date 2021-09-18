@@ -32,7 +32,6 @@
               "keep"     => (2.0, 0.0), (3.0, 0.5), (4.0, 1.0), (6.0, 1.0), (7.0, 0.5), (8.0, 0.0);
               "vol up"   => (3.0, 0.0), (6.0, 0.0), (7.0, 0.5), (8.0, 1.0), (10.0, 1.0);
           }?
-      // Good Moaning
       ).rule(and! {"loudness" => "very quiet", "tod" => "morning"; "change" => "vol up" }
       ).rule(and! {"loudness" => "quiet", "tod" => "morning"; "change" => "keep" }
       ).rule(and! {"loudness" => "loud", "tod" => "morning"; "change" => "keep" }
@@ -64,7 +63,6 @@
       // You might want to plot output set
       plot::set(&change, format!("COG: {:.2}", cog), "Y").to_svg("plot.svg")?;
       // Return COG of the output set.
-      // Jest OKEJ
       Ok(cog)
   }
   #+end_src
