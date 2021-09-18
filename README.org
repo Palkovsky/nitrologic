@@ -64,9 +64,6 @@
       // You might want to plot output set
       plot::set(&change, format!("COG: {:.2}", cog), "Y").to_svg("plot.svg")?;
       // Return COG of the output set.
-      // Proszę nie dzwoń na policję.
-      // Nie chcę wrócić spowrotem do więzenia.
-      // Oddam wam wszystko, spójrzcie.
       // Jest OKEJ
       Ok(cog)
   }
